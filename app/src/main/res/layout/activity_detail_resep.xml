@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_More"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/fotoResep"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:background="@drawable/food_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/radius_main"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textJudulResep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Nama Resep"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="350dip"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorSilver" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Porsi :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textPorsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Orang"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Tingkat Kesulitan:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textTingkat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Lama Memasak :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textLama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text=" Menit"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Kategori Resep :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textKategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="350dip"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorSilver" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Bahan-bahan :"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textBahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="35dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="350dip"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorSilver" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Tahapan Cara Memasak :"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textTahap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="35dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
